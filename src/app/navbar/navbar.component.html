@@ -1,0 +1,142 @@
+<nav class="navbar navbar-expand-sm navcol">
+    <div class="container">        
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                    <div class="dropdown">
+                        <button class="dropbtn">Register</button>
+                            <div class="dropdown-content">
+                                <div class="card">
+                                        <div class="card-body mx-4 mt-4">
+                                            <form #myfrm="ngForm">
+                                                <div class="mdl-textfield ">
+                                                    <input type="text" 
+                                                    placeholder="Full Name"
+                                                    ngModel
+                                                    name="fullname">
+                                                </div>
+                                                <div class="mdl-textfield ">
+                                                    <input type="text" 
+                                                    placeholder="Email"
+                                                    ngModel
+                                                    name="email">
+                                                </div>
+                                                <div class="mdl-textfield ">
+                                                    <input type="number" 
+                                                    placeholder="Mobile Number"
+                                                    name="mobile"
+                                                    ngModel>
+                                                </div>
+                                                <div class="txtgry"> &nbsp;&nbsp;User Type :   <br>
+                                                    <input type="radio" name="usertype" value="agent">Agent&nbsp;&nbsp;
+                                                    <input type="radio" name="usertype" value="owner">Owner&nbsp;&nbsp;
+                                                    <input type="radio" name="usertype" value="builder">Builder
+                                                </div>
+                                                <div class="mdl-textfield ">
+                                                    <input type="password" 
+                                                    placeholder="Password"
+                                                    name="password"
+                                                    ngModel>
+                                                </div>
+                                                <div class="mdl-textfield ">
+                                                    <input type="password" 
+                                                    placeholder="Confirm Password"
+                                                    name="confirmPass"
+                                                    ngModel>
+                                                </div>
+                                                <p><br></p>
+                                                <div class="text-center mb-4">
+                                                    <button type="Submit" 
+                                                    class="btn btn-primary btn-block z-depth-2"
+                                                    (click)="signUp(myfrm)">Sign Up</button>
+                                                </div>
+                                                </form>
+                                        </div>
+                                        <div class="footer mdb-color lighten-3">
+                                            <div class="row d-flex justify-content-center">
+                                                <p class="font-small white-text mb-2 pt-3">or Login with:</p>
+                                            </div>
+                                            <div class="row d-flex justify-content-center">
+                                                <!--Google +-->
+                                                <a class="icons-sm gplus-ic"><i class="fa fa-google Black-text fa-lg"(click)="withGoogle()"> </i></a>
+                                                <!--Facebook-->
+                                                <a class="icons-sm fb-ic"><i class="fa fa-facebook Black-text fa-lg" (click)="withFacebook()"> </i></a>
+                                                <!--Github-->
+                                                <a class="icons-sm tw-ic"><i class="fa fa-github Black-text fa-lg"(click)="withGithub()"> </i></a>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                          
+                  <!-- <a class="nav-link" [routerLink]="['/register']">Register </a> -->
+              </li>
+              <li class="nav-item">
+                    <div class="dropdown">
+                            <button class="dropbtn">Login</button>
+                                <div class="dropdown-content">
+                                        <div class="card">
+                                            <div class="card-body mx-4 mt-4">
+                                                <form #LgnFrm="ngForm">
+                                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                        <input class="mdl-textfield__input" 
+                                                        type="text"
+                                                        placeholder="Your Email" 
+                                                        ngModel                        
+                                                        name="email">
+                                                        <!-- Here the "name" parameter will be same as pojo parameter -->
+                                                    </div>
+                                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label ">
+                                                        <input class="mdl-textfield__input" 
+                                                        type="password"
+                                                        placeholder="Your Password"
+                                                        ngModel 
+                                                        name="password"> 
+                                                        <!-- Here the "name" parameter will be same as pojo parameter -->
+                                                    </div><p><br></p>
+                                                    <div class="text-center mb-4">
+                                                        <button type="Submit"
+                                                        class="btn btn-primary btn-block z-depth-2" (click)="login(LgnFrm)">Log in
+                                                        </button>
+                                                    </div>
+                                                    </form>
+                                                    <p class="font-small grey-text d-flex justify-content-center"><a href="#" >Forgot Password?</a><p> 
+                                                </div>
+                                                <div class="footer pt-0 mdb-color lighten-3">
+                                                    <div class="row d-flex justify-content-center">
+                                                        <p class="font-small white-text mb-2 pt-3">or Login with:</p>
+                                                    </div>
+                                                    <div class="row mt-2 mb-3 d-flex justify-content-center">
+                                                        <!--Google +-->
+                                                        <a class="icons-sm gplus-ic"><i class="fa fa-google Black-text fa-lg"(click)="withGoogle()"> </i></a>
+                                                        <!--Facebook-->
+                                                        <a class="icons-sm fb-ic"><i class="fa fa-facebook Black-text fa-lg" (click)="withFacebook()"> </i></a>
+                                                        <!--Github-->
+                                                        <a class="icons-sm tw-ic"><i class="fa fa-github Black-text fa-lg"(click)="withGithub()"> </i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>            
+                            </ul>
+            <div style="text-align:justify">
+            <span class=" white-text"><i class="material-icons white-text">phone</i>  9156703802</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class=" white-text"><i class="material-icons white-text">mail</i>  codekul@gmail.com</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" class="fa fa-google white-text"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" class="fa fa-twitter white-text"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+            <a href="#" class="fa fa-facebook white-text"></a> 
+          </div>
+          </div>
+        </div>
+  </nav>
+  
+<!-- NAVBAR-END -->
+<div class="bcolor">
+<div class="container">
+<ul>
+    <li>home</li>
+    <li>add</li>
+</ul>
+</div>
+</div>
