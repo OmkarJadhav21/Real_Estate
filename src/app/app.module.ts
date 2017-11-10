@@ -4,16 +4,21 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
-import { RegisterComponent } from './register/register.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MyRoutingModule } from './app.router';
 import { FormsModule } from '@angular/forms';
+import { MainpageComponent } from './mainpage/mainpage.component';
+import { PropertyaddComponent } from './propertyadd/propertyadd.component';
+import { NavbarrComponent } from './navbarr/navbarr.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegisterComponent,
-    NavbarComponent
+    NavbarComponent,
+    MainpageComponent,
+    PropertyaddComponent,
+    NavbarrComponent,
+    
   ],
   imports: [
     BrowserModule,

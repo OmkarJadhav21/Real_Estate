@@ -1,9 +1,12 @@
 import { Routes, RouterModule } from '@angular/router'
-import { RegisterComponent } from './register/register.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MainpageComponent } from './mainpage/mainpage.component';
+import { PropertyaddComponent } from './propertyadd/propertyadd.component';
 
 const routes:Routes=[
-    // { path:'',component:HomeComponent},
-    { path:'register',component:RegisterComponent },
+    { path:'',component:MainpageComponent},
+    { path:'navbar',component:NavbarComponent },
+    { path:'propertyadd',component:PropertyaddComponent },
   
 ];
 

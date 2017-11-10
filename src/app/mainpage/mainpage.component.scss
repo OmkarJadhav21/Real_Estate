@@ -1,27 +1,33 @@
-
-// .navcol{
-//     background-color:rgb(57, 73, 171);
-// }
-.navbar-default{
-    background-color:rgb(55, 72, 170);
-     border-bottom: 0px;
- }
- .navbar-header{
-    margin-left: 7%;
+.bcolor{
+    background-color:rgba(63, 85, 181, 0.918);
 }
-.material-icons {
-    vertical-align: top;
+ul {
+    list-style-type: none;
+    overflow: hidden;
 }
-
-.txtgry{
-    color: grey;
+img{
+    margin-top: 1%;
+    width: 50px;
+}
+li {
+    float: right;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+li a:hover {
+    background-color:rgba(56, 82, 185, 0.918);
 }
 .dropbtn {
     background-color:rgb(57, 73, 171);
     color: white;
     padding: 7px;
     font-size: 16px;
-    
     border: none;
     cursor: pointer;
 }
@@ -29,7 +35,6 @@
 .dropdown {
     position: relative;
     display: inline-block;
-   
 }
 
 .dropdown-content {
@@ -38,7 +43,7 @@
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1; width: 502px;
+    z-index: 1;
 }
 
 .dropdown-content a {
@@ -56,14 +61,4 @@
 
 .dropdown:hover .dropbtn {
     background-color:rgb(40, 66, 184);
-}
-
-.white-text{
-   font-size: 16px;
-   margin-top: 3%;
-   
-}
-.material-icons.white-text{
-    margin-top: 2%;
-    font-size: 25px;
 }
