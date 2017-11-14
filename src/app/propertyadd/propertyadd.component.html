@@ -1,88 +1,175 @@
-<div class="row">
-    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 form-box">
-      <form role="form" action="" method="post" class="f1">
+<section style="background:#efefe9;">
+        <div class="container">
+            <div class="row">
+                <div class="board">
+                    <div class="board-inner">
+                    <ul class="nav nav-tabs" id="myTab">
+                    <div class="liner"></div>
+                     <li class="active">
+                     <a href="#home" data-toggle="tab" title="welcome">
+                      <span class="round-tabs one">
+                              <i class="glyphicon glyphicon-home"></i>
+                      </span> 
+                  </a></li>
+    
+                  <li><a href="#profile" data-toggle="tab" title="profile">
+                     <span class="round-tabs two">
+                         <i class="glyphicon glyphicon-user"></i>
+                     </span> 
+                     </a>
+                 </li>
+                 <li><a href="#messages" data-toggle="tab" title="bootsnipp goodies">
+                     <span class="round-tabs three">
+                          <i class="glyphicon glyphicon-gift"></i>
+                     </span> </a>
+                     </li>
+    
+                     <li><a href="#settings" data-toggle="tab" title="blah blah">
+                         <span class="round-tabs four">
+                              <i class="glyphicon glyphicon-comment"></i>
+                         </span> 
+                     </a></li>
+    
+                     <li><a href="#doner" data-toggle="tab" title="completed">
+                         <span class="round-tabs five">
+                              <i class="glyphicon glyphicon-ok"></i>
+                         </span> </a>
+                     </li>
+                     
+                     </ul>
+                    </div>
 
-        <h3>Register To Our App</h3>
-        <p>Fill in the form to get instant access</p>
-        <div class="f1-steps">
-          <div class="f1-progress">
-              <div class="f1-progress-line" data-now-value="16.66" data-number-of-steps="3" style="width: 16.66%;"></div>
-          </div>
-          <div class="f1-step active">
-            <div class="f1-step-icon"><i class="fa fa-user"></i></div>
-            <p>about</p>
-          </div>
-          <div class="f1-step">
-            <div class="f1-step-icon"><i class="fa fa-key"></i></div>
-            <p>account</p>
-          </div>
-            <div class="f1-step">
-            <div class="f1-step-icon"><i class="fa fa-twitter"></i></div>
-            <p>social</p>
-          </div>
-        </div>
-        
-        <fieldset>
-            <h4>Tell us who you are:</h4>
-          <div class="form-group">
-              <label class="sr-only" for="f1-first-name">First name</label>
-                    <input type="text" name="f1-first-name" placeholder="First name..." class="f1-first-name form-control" id="f1-first-name">
-                </div>
-                <div class="form-group">
-                    <label class="sr-only" for="f1-last-name">Last name</label>
-                    <input type="text" name="f1-last-name" placeholder="Last name..." class="f1-last-name form-control" id="f1-last-name">
-                </div>
-                <div class="form-group">
-                    <label class="sr-only" for="f1-about-yourself">About yourself</label>
-                    <textarea name="f1-about-yourself" placeholder="About yourself..." 
-                                       class="f1-about-yourself form-control" id="f1-about-yourself"></textarea>
-                </div>
-                <div class="f1-buttons">
-                    <button type="button" class="btn btn-next">Next</button>
-                </div>
-            </fieldset>
 
-            <fieldset>
-                <h4>Set up your account:</h4>
-                <div class="form-group">
-                    <label class="sr-only" for="f1-email">Email</label>
-                    <input type="text" name="f1-email" placeholder="Email..." class="f1-email form-control" id="f1-email">
-                </div>
-                <div class="form-group">
-                    <label class="sr-only" for="f1-password">Password</label>
-                    <input type="password" name="f1-password" placeholder="Password..." class="f1-password form-control" id="f1-password">
-                </div>
-                <div class="form-group">
-                    <label class="sr-only" for="f1-repeat-password">Repeat password</label>
-                    <input type="password" name="f1-repeat-password" placeholder="Repeat password..." 
-                                        class="f1-repeat-password form-control" id="f1-repeat-password">
-                </div>
-                <div class="f1-buttons">
-                    <button type="button" class="btn btn-previous">Previous</button>
-                    <button type="button" class="btn btn-next">Next</button>
-                </div>
-            </fieldset>
+<!-- ********************* -->
 
-            <fieldset>
-                <h4>Social media profiles:</h4>
-                <div class="form-group">
-                    <label class="sr-only" for="f1-facebook">Facebook</label>
-                    <input type="text" name="f1-facebook" placeholder="Facebook..." class="f1-facebook form-control" id="f1-facebook">
-                </div>
-                <div class="form-group">
-                    <label class="sr-only" for="f1-twitter">Twitter</label>
-                    <input type="text" name="f1-twitter" placeholder="Twitter..." class="f1-twitter form-control" id="f1-twitter">
-                </div>
-                <div class="form-group">
-                    <label class="sr-only" for="f1-google-plus">Google plus</label>
-                    <input type="text" name="f1-google-plus" placeholder="Google plus..." class="f1-google-plus form-control" id="f1-google-plus">
-                </div>
-                <div class="f1-buttons">
-                    <button type="button" class="btn btn-previous">Previous</button>
-                    <button type="submit" class="btn btn-submit">Submit</button>
-                </div>
-            </fieldset>
-      
-      </form>
+                     <div class="tab-content">
+                      <div class="tab-pane fade in active" id="home">
+                            <div class="col-md-12"style="font-size:14px;">
+                                <h1 style="text-align:center;color:green;" ><b>User Details</b></h1><br>
+                                <div class="col-md-6">
+                                    <label>Property Posted by</label>
+                                    <div class="form-group">
+                                        <select id="usertype" class="form-control" style="font-size:14px;">
+                                            <option value="owner">Owner</option>
+                                            <option value="agent">Agent</option>
+                                            <option value="builder">Builder</option>
+                                        </select>
+                                         </div>
+                                    </div>
+                                <div class="col-md-6">
+                                    <label>Full Name</label>                                       
+                                    <input type="text" placeholder="Full Name">
+                                </div>
+                            </div>
+                            <div class="col-md-12"style="font-size:14px;">
+                                <div class="col-md-6">
+                                    <label>Mobile Number</label>
+                                    <input type="text" placeholder="Mobile Number">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Email</label>                                       
+                                    <input type="text" placeholder="Email">
+                                </div>
+                            </div >
+                        <div style="float:right" >
+                            <input type="button" class="btn btn-indigo " value="Next" href="#profile" data-toggle="tab">
+                        </div>
+                      </div>
+<!-- ******** USER END -->
+
+                      <div class="tab-pane fade" id="profile">
+                            <h1 style="text-align:center;color:orange;" ><b>Property Details</b></h1><br>                            
+                            <div class="col-md-12"style="font-size:14px;">
+                                <div class="col-md-6">
+                                    <label>Property Name</label>                                       
+                                    <input type="text" placeholder="Property Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Property Type</label>
+                                    <div class="form-group">
+                                        <select id="propertytype" class="form-control" style="font-size:14px;">
+                                            <option value="residential">Residential</option>
+                                            <option value="commercial">Commercial</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12" style="font-size:14px;">
+                                <label>Something about property</label>
+                                <textarea placeholder="Description about property"></textarea>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                <div class="card-title"><h3><b>Property Address</b></h3></div>
+                                <div class="card-text">
+                                        <div class="col-md-12" style="font-size:14px;">
+                                                <div class="col-md-6">
+                                                    <label >State</label>
+                                                    <div class="form-group">
+                                                            <select id="state" class="form-control" style="font-size:14px;">
+                                                                <option value="Maharashtra">Maharashtra</option>
+                                                                <option value="Kerala">Kerala</option>
+                                                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                            </select>
+                                                        </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>City</label>                                       
+                                                    <input type="text" placeholder="City">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                    <div class="col-md-6">
+                                                        <label >Locality</label>
+                                                        <input type="text" placeholder="Locality">                                        
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label>Address</label>                                       
+                                                        <input type="text" placeholder="Address">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                            </div>
+
+                      </div>
+                      <div class="tab-pane fade" id="messagess">
+                          <h3 class="head text-center">Bootsnipp goodies</h3>
+                          <p class="narrow text-center">
+                              Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
+                          </p>
+                          
+                          <p class="text-center">
+                    <a href="" class="btn btn-success btn-outline-rounded green"> start using bootsnipp <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
+                </p>
+                      </div>
+                      <div class="tab-pane fade" id="settings">
+                          <h3 class="head text-center">Drop comments!</h3>
+                          <p class="narrow text-center">
+                              Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
+                          </p>
+                          
+                          <p class="text-center">
+                    <a href="" class="btn btn-success btn-outline-rounded green"> start using bootsnipp <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
+                </p>
+                      </div>
+                      <div class="tab-pane fade" id="doner">
+    <div class="text-center">
+    <i class="img-intro icon-checkmark-circle"></i>
     </div>
-</div>
+    <h3 class="head text-center">thanks for staying tuned! <span style="color:#f48260;">♥</span> Bootstrap</h3>
+    <p class="narrow text-center">
+    Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
+    </p>
+    </div>
+    <div class="clearfix"></div>
+    </div>
+
+<!-- ********************** -->
+
+    </div>
+    </div>
+    </div>
+    </section>
+                   

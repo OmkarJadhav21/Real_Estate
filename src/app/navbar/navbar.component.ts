@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NgForm } from '@angular/forms/src/directives/ng_form';
 
 @Component({
   selector: 'app-navbar',
@@ -12,5 +13,16 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
   }
+  frm:NgForm;
 
+one(){
+// this.frm=frmo;
+// console.log("data in frm",this.frm.value)
+}
+two(){
+}
+three(frmo:NgForm){
+console.log(frmo.value);
+
+}
 }

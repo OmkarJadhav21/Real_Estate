@@ -4,7 +4,7 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { PropertyaddComponent } from './propertyadd/propertyadd.component';
 
 const routes:Routes=[
-    { path:'',component:MainpageComponent},
+    // { path:'',component:MainpageComponent},
     { path:'navbar',component:NavbarComponent },
     { path:'propertyadd',component:PropertyaddComponent },
   

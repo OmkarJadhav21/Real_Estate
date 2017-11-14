@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -25,7 +26,8 @@ import { NavbarrComponent } from './navbarr/navbarr.component';
     MDBBootstrapModule.forRoot(),
     NgbModule.forRoot(),
     FormsModule,
-    MyRoutingModule
+    MyRoutingModule,
+    BrowserAnimationsModule,
     
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
