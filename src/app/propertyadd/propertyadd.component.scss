@@ -1,8 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
 .board{
-    width: 75%;
+    width: 80%;
 margin: 60px auto;
-height: 500px;
+height: 500px auto;
 background: #fff;
 }
 .board .nav-tabs {
@@ -104,9 +104,9 @@ span.round-tabs.five{
 }
 
 li.active span.round-tabs.five{
-    background: #fff !important;
+    background: rgb(49, 211, 8) !important;
     border: 2px solid #ddd;
-    color: #999;
+    color: rgb(0, 0, 0);
 }
 
 .nav-tabs > li.active > a span.round-tabs{
@@ -211,4 +211,11 @@ left: 35%;
 
 input{
     font-size: 14px;
+    color: black;
+}
+label{
+    color: grey;
+}
+.material-icons{
+    float: right;
 }

@@ -5,32 +5,32 @@
                     <div class="board-inner">
                     <ul class="nav nav-tabs" id="myTab">
                     <div class="liner"></div>
-                     <li class="active">
-                     <a href="#home" data-toggle="tab" title="welcome">
+                     <li [ngClass]="{'active':tab1}">
+                     <a href="#user" title="User">
                       <span class="round-tabs one">
-                              <i class="glyphicon glyphicon-home"></i>
+                              <i class="glyphicon glyphicon-user"></i>
                       </span> 
                   </a></li>
     
-                  <li><a href="#profile" data-toggle="tab" title="profile">
+                  <li [ngClass]="{'active':tab2}"><a title="home">
                      <span class="round-tabs two">
-                         <i class="glyphicon glyphicon-user"></i>
+                         <i class="glyphicon glyphicon-home"></i>
                      </span> 
                      </a>
                  </li>
-                 <li><a href="#messages" data-toggle="tab" title="bootsnipp goodies">
+                 <li [ngClass]="{'active':tab3}"><a title="bootsnipp goodies">
                      <span class="round-tabs three">
                           <i class="glyphicon glyphicon-gift"></i>
                      </span> </a>
                      </li>
     
-                     <li><a href="#settings" data-toggle="tab" title="blah blah">
+                     <li [ngClass]="{'active':tab4}"><a title="blah blah">
                          <span class="round-tabs four">
-                              <i class="glyphicon glyphicon-comment"></i>
+                              <i class="glyphicon glyphicon-leaf"></i>
                          </span> 
                      </a></li>
     
-                     <li><a href="#doner" data-toggle="tab" title="completed">
+                     <li [ngClass]="{'active':tab5}"><a title="completed">
                          <span class="round-tabs five">
                               <i class="glyphicon glyphicon-ok"></i>
                          </span> </a>
@@ -40,16 +40,16 @@
                     </div>
 
 
-<!-- ********************* -->
+<!-- ******* USER START ********** -->
 
                      <div class="tab-content">
-                      <div class="tab-pane fade in active" id="home">
+                      <div class="tab-pane fade in active" id="user">
                             <div class="col-md-12"style="font-size:14px;">
-                                <h1 style="text-align:center;color:green;" ><b>User Details</b></h1><br>
+                                <h1 style="text-align:center;color:green;" ><b>User Details</b></h1><hr>
                                 <div class="col-md-6">
                                     <label>Property Posted by</label>
                                     <div class="form-group">
-                                        <select id="usertype" class="form-control" style="font-size:14px;">
+                                        <select id="Posted By" class="form-control" style="font-size:14px;">
                                             <option value="owner">Owner</option>
                                             <option value="agent">Agent</option>
                                             <option value="builder">Builder</option>
@@ -71,14 +71,14 @@
                                     <input type="text" placeholder="Email">
                                 </div>
                             </div >
-                        <div style="float:right" >
-                            <input type="button" class="btn btn-indigo " value="Next" href="#profile" data-toggle="tab">
+                        <div style="float:right;margin-top:15px;" >
+                            <input type="button" class="btn btn-outline-success " value="Next" href="#home" (click)="fun2()"data-toggle="tab">
                         </div>
                       </div>
 <!-- ******** USER END -->
 
-                      <div class="tab-pane fade" id="profile">
-                            <h1 style="text-align:center;color:orange;" ><b>Property Details</b></h1><br>                            
+                      <div class="tab-pane fade" id="home">
+                            <h1 style="text-align:center;color:orange;" ><b>Property Details</b></h1><hr>                           
                             <div class="col-md-12"style="font-size:14px;">
                                 <div class="col-md-6">
                                     <label>Property Name</label>                                       
@@ -95,66 +95,313 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12" style="font-size:14px;">
+                            <div class="col-md-12" style="font-size:14px;margin-left:10px;">
                                 <label>Something about property</label>
                                 <textarea placeholder="Description about property"></textarea>
                             </div>
-                            <div class="card">
-                                <div class="card-body">
-                                <div class="card-title"><h3><b>Property Address</b></h3></div>
-                                <div class="card-text">
-                                        <div class="col-md-12" style="font-size:14px;">
-                                                <div class="col-md-6">
-                                                    <label >State</label>
-                                                    <div class="form-group">
-                                                            <select id="state" class="form-control" style="font-size:14px;">
-                                                                <option value="Maharashtra">Maharashtra</option>
-                                                                <option value="Kerala">Kerala</option>
-                                                                <option value="Uttar Pradesh">Uttar Pradesh</option>
-                                                            </select>
-                                                        </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label>City</label>                                       
-                                                    <input type="text" placeholder="City">
-                                                </div>
+                                <div class="col-md-12">
+                                    <h3 style="margin-left:10px;color:rgb(255, 162, 0);margin-top:5px;"><b>Property Address</b></h3>
+                                    <div class="col-md-12" style="font-size:14px;color:black">
+                                        <div class="col-md-6">
+                                            <label >State</label>
+                                            <div class="form-group">
+                                                <select id="state" class="form-control" style="font-size:14px;color:black">
+                                                    <option value="Maharashtra">Maharashtra</option>
+                                                    <option value="Kerala">Kerala</option>
+                                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                </select>
                                             </div>
-                                            <div class="col-md-12">
-                                                    <div class="col-md-6">
-                                                        <label >Locality</label>
-                                                        <input type="text" placeholder="Locality">                                        
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label>Address</label>                                       
-                                                        <input type="text" placeholder="Address">
-                                                    </div>
-                                                </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>City</label>                                       
+                                            <input type="text" placeholder="City">
+                                        </div>
+                                        </div>
+                                        <div class="col-md-12" style="font-size:14px;color:black">
+                                            <div class="col-md-6">
+                                                <label >Locality</label>
+                                                <input type="text" placeholder="Locality">                                        
                                             </div>
+                                            <div class="col-md-6">
+                                                <label>Address</label>                                       
+                                                <input type="text" placeholder="Address">
+                                            </div>
+                                        </div>
+                                        <div style="float:right;margin-top:20px;" >
+                                            <input type="button" class="btn btn-outline-warning " value="Previous" (click)="fun1()"href="#user" data-toggle="tab">
+                                            <input type="button" class="btn btn-outline-success " value="Next" (click)="fun3()"href="#leaf" data-toggle="tab">                                                
+                                        </div>
+                            </div>
+                      </div>
+<!-- **************  PROPERTY DETAIL ENDS -->
+
+                      <div class="tab-pane fade" id="leaf">
+                            <h1 style="text-align:center;color:rgb(11, 39, 121);" ><b>Property Features</b></h1><hr>  
+                            <div class="col-md-12"style="font-size:14px;">
+                                <div class="col-md-6">
+                                    <label>Project Total Towers</label>                                       
+                                    <input type="text" placeholder="Total Towers">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Project Total Units</label>                                       
+                                    <input type="text" placeholder="Total Units">
+                                </div>
+                            </div><br>
+                            
+                            <div class="col-md-12"style="font-size:14px;">
+                                <div class="col-md-6">
+                                    <label>Project Available Units</label>                                       
+                                    <input type="text" placeholder="Available Units">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Project Launch Date</label>                                       
+                                    <input type="text" placeholder="Launch Date">
                                 </div>
                             </div>
+                            <div class="col-md-12"style="font-size:14px;">
+                                <div class="col-md-6">
+                                    <label>Select Property to Add</label>
+                                    <div class="form-group">
+                                        <select id="property" class="form-control" style="font-size:14px;">
+                                            <option value="1 RK">1 RK</option>
+                                            <option value="1 BHK">1 BHK</option>
+                                            <option value="2 BHK">2 BHK</option>
+                                            <option value="3 BHK">3 BHK</option>
+                                            <option value="Greater than 3 BHK">Greater than 3 BHK</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12"style="font-size:14px;">
+                                <h3 style="color:rgb(11, 39, 121);" ><b>Add Details about Property</b></h3><hr>  
+                                <div class="card" *ngIf="!del">
+                                    <a (click)="del=!del"><i class="material-icons" placement="top" ngbTooltip="Delete Details" >delete</i></a>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            <div class="col-md-6">
+                                                <label style="font-size:14px;">Number of Flats</label>                                       
+                                                <input type="text" placeholder="No.of flats">
+                                            </div>  
+                                            <div class="col-md-6">
+                                                <label style="font-size:14px;">Average Area</label>                                       
+                                                <input type="text" placeholder="Average Area">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label style="font-size:14px;">Available For</label>
+                                                <div class="form-group">
+                                                    <select id="AvailFor" class="form-control" style="font-size:14px;">
+                                                        <option value="Family">Family</option>
+                                                        <option value="Batchlor">Batchlor</option>
+                                                        <option value="Anyone">Anyone</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label style="font-size:14px;">Starting Price</label>  
+                                                <input type="text" placeholder="Starting Price">
+                                            </div>         
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-md-12"style="font-size:14px;">
+                                    <h3 style="color:rgb(11, 39, 121);margin-top:10px;" ><b>Area Details</b></h3><hr>  
+                                    <div class="card" >
+                                        <div class="card-body">
+                                            <div class="card-text">
+                                                <div class="col-md-6">
+                                                    <div class="col-md-4">
+                                                        <label style="font-size:14px;">Covered Area</label>                                       
+                                                        <input type="text" placeholder="Covered Area">
+                                                     </div>
+                                                     <div class="col-md-2" style="margin-top:23px;" >
+                                                        <div class="form-group">
+                                                            <select id="unit" class="form-control" style="font-size:14px;">
+                                                                <option value="Sqft">Sqft</option>
+                                                                <option value="SqYard">SqYard</option>
+                                                                <option value="Sqm">Sqm</option>
+                                                            </select>
+                                                        </div>
+                                                     </div>
 
+                                                     <div class="col-md-4">
+                                                        <label style="font-size:14px;">Plot Area</label>                                       
+                                                        <input type="text" placeholder="Plot Area">
+                                                    </div>
+                                                <div class="col-md-2" style="margin-top:23px;" >
+                                                    <div class="form-group">
+                                                        <select id="plotunit" class="form-control" style="font-size:14px;">
+                                                            <option value="Sqft">Sqft</option>
+                                                            <option value="SqYard">SqYard</option>
+                                                            <option value="Sqm">Sqm</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                </div>  
+                                                <div class="col-md-6">
+                                                    <div class="col-md-4">
+                                                        <label style="font-size:14px;">Carpet Area</label>                                       
+                                                        <input type="text" placeholder="Covered Area">
+                                                     </div>
+                                                     <div class="col-md-2" style="margin-top:23px;" >
+                                                        <div class="form-group">
+                                                            <select id="crptunit" class="form-control" style="font-size:14px;">
+                                                                <option value="Sqft">Sqft</option>
+                                                                <option value="SqYard">SqYard</option>
+                                                                <option value="Sqm">Sqm</option>
+                                                            </select>
+                                                        </div>
+                                                     </div>
+
+                                                     <div class="col-md-4">
+                                                        <label style="font-size:14px;">Plot Length</label>                                       
+                                                        <input type="text" placeholder="Plot Area">
+                                                    </div>
+                                                <div class="col-md-2" style="margin-top:23px;" >
+                                                    <div class="form-group">
+                                                        <select id="pltlntunit" class="form-control" style="font-size:14px;">
+                                                            <option value="Sqft">Sqft</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                </div>  
+                                                <div class="col-md-6">
+                                                    <div class="col-md-4">
+                                                        <label style="font-size:14px;">Price Per sq-ft</label>                                       
+                                                        <input type="text" placeholder="Price">
+                                                     </div>
+                                                     <div class="col-md-2" style="margin-top:23px;" >
+                                                        <div class="form-group">
+                                                            <select id="pricunit" class="form-control" style="font-size:14px;">
+                                                                <option value="Sqft">Sqft</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">                                                    
+                                                    <div class="col-md-4">
+                                                        <label style="font-size:14px;">Plot Breadth</label>                                       
+                                                        <input type="text" placeholder="Plot Area">
+                                                    </div>
+                                                 <div class="col-md-2" style="margin-top:23px;" >
+                                                    <div class="form-group">
+                                                        <select id="pltlntunit" class="form-control" style="font-size:14px;">
+                                                            <option value="Sqft">Sqft</option>
+                                                        </select>
+                                                    </div>
+                                                 </div>
+                                                </div>      
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="float:right;margin-top:20px;" >
+                                        <input type="button" class="btn btn-outline-warning " value="Previous" (click)="fun2()"href="#home" data-toggle="tab">
+                                        <input type="button" class="btn btn-outline-success" value="Next" (click)="fun4()"href="#gift" data-toggle="tab">                                                
+                                    </div>
+                                </div>                                    
                       </div>
-                      <div class="tab-pane fade" id="messagess">
-                          <h3 class="head text-center">Bootsnipp goodies</h3>
-                          <p class="narrow text-center">
-                              Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
-                          </p>
-                          
-                          <p class="text-center">
-                    <a href="" class="btn btn-success btn-outline-rounded green"> start using bootsnipp <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
-                </p>
-                      </div>
-                      <div class="tab-pane fade" id="settings">
-                          <h3 class="head text-center">Drop comments!</h3>
-                          <p class="narrow text-center">
-                              Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
-                          </p>
-                          
-                          <p class="text-center">
-                    <a href="" class="btn btn-success btn-outline-rounded green"> start using bootsnipp <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
-                </p>
-                      </div>
-                      <div class="tab-pane fade" id="doner">
+<!-- ************ PROPERTY ENDS 2-3 Pge -->
+    <div class="tab-pane fade" id="gift">
+        <h1 style="text-align:center;color: #f34a3e" ><b>Transaction and Amenities</b></h1><hr>  
+        <div class="col-md-12">
+        <div class="col-md-6"style="font-size:14px;">
+                <label>Transaction Type</label><br>
+                <input type="radio" name="Transaction type" value="New Property"> New Property &nbsp;
+                <input type="radio" name="Transaction type" value="Resale"> Resale<br><br>
+                <label>Possession Status</label><br>
+                <input type="radio" name="Possession Status" value="Ready to move"> Ready to move &nbsp;
+                <input type="radio" name="Possession Status" value=" Under Construction"> Under Construction<br>
+        </div>
+        <div class="col-md-6"style="font-size:14px;">
+        <label> Age of Property</label>
+            <div class="form-group">
+            <select id="propAge" class="form-control" style="font-size:14px;">
+                <option value="0-1 year">0-1 year</option>
+                <option value="1-2 years">1-2 years</option>
+                <option value="2-3 years">2-3 years</option>
+                <option value="Grater than 3 years">Grater than 3 years</option>
+            </select>
+            </div>
+            <label>Project Available on Date</label>
+            <input type="date" name="" id="">
+        </div>
+    </div><br> &nbsp;
+    <div style="margin-top:15px;">
+    <h2 style="text-align:center;color:#f34a3e"><b style="margin-top:15px;">Add Amenities</b></h2>
+    </div><hr>
+    <div class="col-md-12">
+        <div class="col-md-3" style="font-size:14px;">
+                <input type="checkbox" name="Amenities" value="Club House">&nbsp;Club House  <br>
+                <input type="checkbox" name="Amenities" value="Coffee Lounge & Restaurent">&nbsp;Coffee Lounge & Restaurent  <br>
+                <input type="checkbox" name="Amenities" value="Cafeteria/Food Court">&nbsp;Cafeteria/Food Court  <br>
+                <input type="checkbox" name="Amenities" value="Bar/Lounge">&nbsp;Bar/Lounge  <br>
+                <input type="checkbox" name="Amenities" value="Jogging And Strolling Track">&nbsp;Jogging And Strolling Track  <br>
+                <input type="checkbox" name="Amenities" value="Outdoor & Tennis Court">&nbsp;Outdoor & Tennis Court  <br>
+                <input type="checkbox" name="Amenities" value="Cycling & Jogging Track">&nbsp;Cycling & Jogging Track  <br>
+                <input type="checkbox" name="Amenities" value="Private Terrace/Garden">&nbsp;Private Terrace/Garden  <br>
+                <input type="checkbox" name="Amenities" value="Barbeque Pit">&nbsp;Barbeque Pit  <br>
+                <input type="checkbox" name="Amenities" value="Dance Studio">&nbsp;Dance Studio  <br>
+                <input type="checkbox" name="Amenities" value="Power Back-up">&nbsp;Power Back-up  <br>
+                <input type="checkbox" name="Amenities" value="Swimming Pool">&nbsp;Swimming Pool  <br>
+                <input type="checkbox" name="Amenities" value="Lift">&nbsp;Lift  <br>
+                
+        </div>
+        <div class="col-md-3"style="font-size:14px;">
+                <input type="checkbox" name="Amenities" value="Multipurpose Court">&nbsp;Multipurpose Court<br>
+                <input type="checkbox" name="Amenities" value="Meditation Area">&nbsp;Meditation Area<br>
+                <input type="checkbox" name="Amenities" value="Vastu Compliant">&nbsp;Vastu Compliant<br>
+                <input type="checkbox" name="Amenities" value="Internet/Wifi Connectivity">&nbsp;Internet/Wifi Connectivity<br>
+                <input type="checkbox" name="Amenities" value="Waste Disposal">&nbsp;Waste Disposal<br>
+                <input type="checkbox" name="Amenities" value="Conference Room">&nbsp;Conference Room<br>
+                <input type="checkbox" name="Amenities" value="Early Learning Centre">&nbsp;Early Learning Centre<br>
+                <input type="checkbox" name="Amenities" value="Event Space & Amphitheatre">&nbsp;Event Space & Amphitheatre<br>
+                <input type="checkbox" name="Amenities" value="Fire Fighting Equipement">&nbsp;Fire Fighting Equipement<br>
+                <input type="checkbox" name="Amenities" value="Concierge Services">&nbsp;Concierge Services<br>
+                <input type="checkbox" name="Amenities" value="Security">&nbsp;Security<br>
+                <input type="checkbox" name="Amenities" value="Canopy Walk">&nbsp; Canopy Walk<br> 
+                <input type="checkbox" name="Amenities" value="Intercom Facility">&nbsp;Intercom Facility <br>
+                
+        </div>
+        <div class="col-md-3"style="font-size:14px;">
+                <input type="checkbox" name="Amenities" value="Water Storage">&nbsp; Water Storage<br>
+                <input type="checkbox" name="Amenities" value="Air Conditioned">&nbsp; Air Conditioned<br>
+                <input type="checkbox" name="Amenities" value="Badminton Court">&nbsp;Badminton Court <br>
+                <input type="checkbox" name="Amenities" value="Arts & Crafts Studio">&nbsp;Arts & Crafts Studio <br>
+                <input type="checkbox" name="Amenities" value="Bank & ATM">&nbsp; Bank & ATM<br>
+                <input type="checkbox" name="Amenities" value="Banquet Hall">&nbsp;Banquet Hall <br>
+                <input type="checkbox" name="Amenities" value="Guest Accomodation">&nbsp;Guest Accomodation <br>
+                <input type="checkbox" name="Amenities" value="Gymnasium">&nbsp;Gymnasium <br>
+                <input type="checkbox" name="Amenities" value="Indoor Games Room">&nbsp;Indoor Games Room <br>
+                <input type="checkbox" name="Amenities" value="Kids Club">&nbsp;Kids Club <br>
+                <input type="checkbox" name="Amenities" value="Kids Play Area">&nbsp;Kids Play Area <br>
+                <input type="checkbox" name="Amenities" value="Aerobics Room">&nbsp;Aerobics Room <br>
+                <input type="checkbox" name="Amenities" value="Flowers Garden">&nbsp;Flowers Garden<br>                
+        </div>
+        <div class="col-md-3"style="font-size:14px;">
+                <input type="checkbox" name="Amenities" value="DTH Television Facility">&nbsp;DTH Television Facility"<br>
+                <input type="checkbox" name="Amenities" value="Laundry Service">&nbsp;Laundry Service<br>
+                <input type="checkbox" name="Amenities" value="Liabrary & Business Centre">&nbsp;Liabrary & Business Centre <br>
+                <input type="checkbox" name="Amenities" value="Piped Gas">&nbsp;Piped Gas <br>
+                <input type="checkbox" name="Amenities" value="Rain Water Harvesting ">&nbsp; Rain Water Harvesting <br>
+                <input type="checkbox" name="Amenities" value="Recreational Pool">&nbsp;Recreational Pool <br>
+                <input type="checkbox" name="Amenities" value="RO Water System">&nbsp;RO Water System <br>
+                <input type="checkbox" name="Amenities" value="Reserved Parking">&nbsp;Reserved Parking<br>
+                <input type="checkbox" name="Amenities" value="Service /Goods Lift">&nbsp;Service /Goods Lift <br>
+                <input type="checkbox" name="Amenities" value="Visitors Parking">&nbsp;Visitors Parking <br>
+                <input type="checkbox" name="Amenities" value="Maintenance Staff">&nbsp;Maintenance Staff <br>
+                <input type="checkbox" name="Amenities" value="Kids Playpool with Water Slides">&nbsp;Kids Playpool with Water Slides<br>
+                
+        </div>
+    </div>
+    <div style="float:right;margin-top:20px;" >
+            <input type="button" class="btn btn-outline-warning " value="Previous" (click)="fun3()"href="#leaf" data-toggle="tab">
+            <input type="button" class="btn btn-success" style="color:#f1685e" value="Submit my Property" (click)="fun5()"href="#doner" (click)="submit()" data-toggle="tab">                                                
+        </div>
+</div>
+<!-- *************** SETTING ENDS 4 -->
+
+            <div class="tab-pane fade" id="doner">
     <div class="text-center">
     <i class="img-intro icon-checkmark-circle"></i>
     </div>
