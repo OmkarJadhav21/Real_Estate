@@ -1,3 +1,4 @@
+import { NgForm } from '@angular/forms/src/directives/ng_form';
 import { Component, OnInit } from '@angular/core';
 import { HostBinding } from '@angular/core/src/metadata/directives';
 
@@ -51,13 +52,13 @@ fun4(){
   this.tab5=false
   console.log("in fun1111");
 }
-fun5(){
+SubmitProperty(subProprtyFrm:NgForm){
   this.tab1=false;
   this.tab2=false
   this.tab3=false
   this.tab4=false
   this.tab5=true
-  console.log("in fun1111");
+  console.log(subProprtyFrm.value);
 }
 
 }

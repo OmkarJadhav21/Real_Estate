@@ -62,3 +62,97 @@ li a:hover {
 .dropdown:hover .dropbtn {
     background-color:rgb(40, 66, 184);
 }
+
+.searchBoxsize{
+width: 70%;
+margin-left: 15%;
+}
+.center {
+    margin: auto;
+    width: 60%;
+    height: auto;
+    border: 3px solid #73AD21;
+    padding: 3px;
+}
+.siz{
+    margin: 0 0 3px 0;
+    position: relative;
+    padding-left: 11px;    
+}
+.colo{
+    background-color: black;
+}
+img{
+    margin: auto;
+}
+.brd{
+    border-radius: 30%;
+    background-color: black;
+    width: 105px;
+    height: 45px;
+    
+}
+.btn1{
+    float: left;
+    margin-left: -8%;
+    height: 55px;
+    border-radius: 80%;
+    margin-top: 11%;
+    background: transparent;  
+}
+
+.btn2{
+    float: right;
+    margin-right: -8%;
+    height: 55px;
+    border-radius: 80%;
+    margin-top: 11%;
+    background: transparent;
+}
+.carousel-indicators .active {
+    background-color: #d25a69;
+}
+
+
+
+
+// <div>
+// <ul>
+//   <li>
+//     <div class="card" style="width:16.5rem;height:16.5rem;">
+//       <img class="card-img-top center" src="../../assets/vs2.png" alt="Card image cap">
+//       <div class="card-body">
+//         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+//         <a href="#" class="btn btn-primary">Go somewhere</a>
+//       </div>
+//     </div>
+//   </li>
+//   <li>
+//     <div class="card" style="width:16.5rem;height:16.5rem;">
+//       <img class="card-img-top center" src="../../assets/vs2.png" alt="Card image cap">
+//       <div class="card-body">
+//         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+//         <a href="#" class="btn btn-primary">Go somewhere</a>
+//       </div>
+//     </div>
+//   </li>
+//   <li>
+//     <div class="card" style="width:16.5rem;height:16.5rem;">
+//       <img class="card-img-top center" src="../../assets/vs2.png" alt="Card image cap">
+//       <div class="card-body">
+//         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+//         <a href="#" class="btn btn-primary">Go somewhere</a>
+//       </div>
+//     </div>
+//   </li>
+//   <li>
+//     <div class="card" style="width:16.5rem;height:16.5rem;">
+//       <img class="card-img-top center" src="../../assets/vs2.png" alt="Card image cap">
+//       <div class="card-body">
+//         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+//         <a href="#" class="btn btn-primary">Go somewhere</a>
+//       </div>
+//     </div>
+//   </li>
+// </ul>
+// </div>

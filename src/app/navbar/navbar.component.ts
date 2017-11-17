@@ -9,20 +9,9 @@ import { NgForm } from '@angular/forms/src/directives/ng_form';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private router:Router) { }
-
-  ngOnInit() {
+  constructor() { }
+  
+ngOnInit() {
   }
-  frm:NgForm;
 
-one(){
-// this.frm=frmo;
-// console.log("data in frm",this.frm.value)
-}
-two(){
-}
-three(frmo:NgForm){
-console.log(frmo.value);
-
-}
 }

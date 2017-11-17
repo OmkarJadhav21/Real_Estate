@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { PropertyaddComponent } from './propertyadd/propertyadd.component';
 import { NavbarrComponent } from './navbarr/navbarr.component';
+import { AddpropertyComponent } from './addproperty/addproperty.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { NavbarrComponent } from './navbarr/navbarr.component';
     MainpageComponent,
     PropertyaddComponent,
     NavbarrComponent,
+    AddpropertyComponent,
     
   ],
   imports: [
