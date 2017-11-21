@@ -1,10 +1,126 @@
-.submit-property{
+body{
+    background-color: #f0f0f0;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+     background-color: rgb(134, 133, 133);
+     border-radius: 26px;
+     margin: 8px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: white;
+    background-color: #03A9F4;
+     border-radius: 26px;
+    border-color: transparent;
+}
+.nav-tabs {
+    border-bottom: 0px solid transparent;
+}
+
+h5, p{
+      text-align: center;
+  }
+
+.centered {
+    margin-left: 25%;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 6 3 auto;
+    padding: 6.25rem;
+    padding-bottom: 3.23rem;
+    padding-top: 3.23rem;
+    font-weight: 300;
+}
+
+.crdmrgin{
+    padding-top: 5%;
+  }
+
+
+  input{
+      text-align: center;
+  }
+  .round-tabs{
+    width: 80px;
+    height: 80px;
+    line-height: 90px;
+    display: inline-block;
+    border-radius: 100px;
+    background: rgb(43, 228, 6);
+    z-index: 2;
+    // position: absolute;
+    left: 0;
     text-align: center;
-    box-sizing: border-box;
-    font-family: Roboto,sans-serif;
-    font-size: 13px;
-    line-height: 1.42857143;
-    color: #828282;
-    -webkit-tap-highlight-color: transparent;
-    box-sizing: border-box;
+    font-size: 25px;
+}
+.round-tabs.check{
+    color: rgb(3, 0, 0);
+    border: 2px solid rgb(3, 0, 0);
+    margin-bottom: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (min-width: 768px){
+
+   .col-md-7 {
+      -ms-flex: 0 0 58.333333%;
+      flex: 0 0 58.333333%;
+      max-width: 66.333333%;
+  }
+}
+.cl{
+    min-width: 390px;
+    pointer-events: auto;
+    font-size: 16px;
+    top: 123.9844px;
+    left: 22%;
+    width: auto;
+}
+
+body{
+    background-color: #f0f0f0;
+}
+
+h5, p{
+    text-align: center;
+}
+.pdding{
+    padding: 10px;    
+}
+.crd {
+    border-radius: 65px;
+    text-align: -webkit-center;
+    width: 44px;
+    height: 44px;
+    /* background-color: white;     */
+}
+
+.crdActive{
+    background-color: #03A9F4;
+    color: white;
+}
+ 
+.btnclr{
+    background-color: #2196F3;
+}
+.setproper{
+    pointer-events: auto;
+    font-size: 16px;
+    width: fit-content;
+    min-width: 376px;
+    top: 48.1719px;
+    left: 441px;
 }

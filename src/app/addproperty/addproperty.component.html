@@ -1,14 +1,368 @@
-<div class="container">
+<div style="background-color:#f3f3f3">
+<br>
+   <h5> Submit Your Property</h5>
+   <p>Safe and easy to submit your property today towards Government</p>
+   
+<div class="container" >
+        <div class="row" style="padding-bottom: 41px;text-align: -webkit-center;">
+        <div class="col-md-4">           
+        </div>
+           <div class="col-md-4">
+               <div class="row">
+                    <div class="col-md-2">
+                        <div class="card crd" [ngClass]="{'crdActive':one}">
+                           <p class="pdding"> 1 </p>     
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card crd" [ngClass]="{'crdActive':two}">
+                            <p class="pdding">2</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card crd" [ngClass]="{'crdActive':three}">
+                            <p class="pdding">3</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card crd" [ngClass]="{'crdActive':four}">
+                            <p class="pdding">4</p>
+                        </div> 
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card crd" [ngClass]="{'crdActive':five}">
+                            <p class="pdding">5</p>  
+                        </div> 
+                    </div>
+               </div>
+           </div>
+           <div class="col-md-4">
+           </div>
+        </div>
+    </div>
 
-<div class="submit-property">
-    <ul class="submit-property__steps">
-        <li class="active"><a href="#" data-toggle="tab">1</a></li>
-        <li><a href="#" data-toggle="tab">2</a></li>
-        <li><a href="#" data-toggle="tab">3</a></li>
-        <li><a href="#" data-toggle="tab">4</a></li>
-        <li><a href="#" data-toggle="tab">5</a></li>
-
-        <li class="submit-property__caret"></li>
-    </ul>
-</div>
-</div>
+    <div class="row">
+    <!-- <form> -->
+        <div class="col-md-3"></div>
+        <div class="col-md-6" *ngIf="one">
+            <div class="col-md-12" style="text-align:center;font-size:14px;">
+                    <form #myForm1="ngForm">
+                            
+                    <div class="card">
+                        <div class="card-body"  >
+                            <h5 class="card-title "> 
+                            <b> Contact Informtion </b>
+                            </h5>
+                            <p > Please enter your detail </p>
+                         <div class="row">
+                            <div class="col-md-6"><label>Property Posted by</label></div>
+                            <div class="col-md-6">
+                                 <div class="form-group">
+                                     <select name="propertyPostedby" class="form-control"  ngModel>
+                                        <option value="owner" selected>Owner</option>
+                                        <option value="agent">Agent</option>
+                                        <option value="builder">Builder</option>
+                                    </select>
+                                </div>
+                            </div>                   
+                         </div>
+                        <div >
+                            <label>Full Name</label>                                       
+                            <input type="text" name="fullName" ngModel>
+                        </div>
+                        <div>
+                            <label>Mobile Number</label>
+                            <input type="text"  name="mobile"ngModel>
+                        </div>
+                        <div>
+                            <label>Email</label>                                       
+                            <input type="text"  name="email"ngModel>
+                        </div>
+                        <div>
+                            <label>Orangnization name</label>     
+                            <input type="text"  name="companyName" ngModel>
+                        </div>
+                        <div>
+                            <label>About Builder</label>                                                 
+                            <textarea type="text"  name="aboutBuilder" ngModel></textarea>
+                        </div>
+                        </div>
+                         </div>
+                         <input type="button" class="btn btn-indigo" value="Next" (click)="onOne(myForm1)" >
+                         <input type="button" class="btn btn-indigo" value="Prev" (click)="onOne(myForm1)" >
+                         
+                         <!-- <button class="btnclr" style="background-color: #2196F3;" (click)="onOne(myForm1)" > NEXT </button>                    -->
+                    </form>
+                </div>
+        </div>
+    
+        <div class="col-md-6" *ngIf="two">
+            <div class="col-md-12" style="text-align:center;">
+                <form #myForm2="ngForm">
+                    <div class="card">
+                            <div class="card-body"  >
+                                   <h5 class="card-title "> 
+                                   <b> Property Location </b> <br> 
+                                   </h5>
+                                   <p > Please enter your Property Location and Information </p>
+                                   <div class="example-container ">
+                                    <div>
+                                        <label>Property Name</label>                                       
+                                        <input type="text" name="propertyName"ngModel>
+                                    </div>
+                                    <div>
+                                        <label>Property Type</label>
+                                        <div class="form-group" >
+                                            <select name="propertytype" ngModel class="form-control">
+                                                <option value="residential">Residential</option>
+                                                <option value="commercial">Commercial</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div >
+                                        <label>Something about property</label>
+                                        <textarea style="text-align:center" placeholder="Description about property" name="propertyDescription"ngModel></textarea>
+                                    </div>
+                                    <div >
+                                        <label >State</label>
+                                        <div class="form-group">
+                                            <select name="state" class="form-control" ngModel>
+                                                <option value="Maharashtra">Maharashtra</option>
+                                                <option value="Kerala">Kerala</option>
+                                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div >
+                                        <label>City</label>                                       
+                                        <input type="text" name="city"ngModel>
+                                    </div>
+                                    <div>
+                                        <label >Locality</label>
+                                        <input type="text"name="locality"ngModel>                                        
+                                    </div>
+                                    <div>
+                                        <label>Address</label>                                       
+                                        <input type="text"name="address"ngModel>
+                                    </div>
+                                </div>
+                             </div>
+                       </div>
+                       <input type="button" class="btn btn-indigo" value="Next"  (click)="onTwo(myForm2)" >
+                       <input type="button" class="btn btn-indigo" value="Prev"  (click)="onTwo(myForm2)" >
+                       <!-- <button  color="primary" style="background-color: #2196F3;" (click)="onTwo(myForm2)" > NEXT </button>                    -->
+                </form> 
+            </div>
+        </div>
+    
+        <div class="col-md-6" *ngIf="three" >
+            <div class="col-md-12" style="text-align:center;">
+                <form #myForm3="ngForm">
+                    <div class="card">
+                            <div class="card-body"  >
+                                   <h5 class="card-title "> 
+                                   <b> Property Information </b> <br> 
+                                   </h5>
+                                   <p > Please enter your Property detail </p>
+                                   <div class="example-container ">
+                                       <div class="row">
+                                            <div class="col-md-6"><label>Select Your Property</label></div>
+                                            <div class="col-md-6">
+                                                <select placeholder="Select Property  to Add " name=" selectAddProperty" ngModel>
+                                                    <option name="1rk" value="1rk" >1 RK</option>
+                                                    <option name="1bhk" value="1bhk" >1 BHK</option>
+                                                    <option name="2bhk" value="2bhk" >2 BHK</option>   
+                                                    <option name="3bhk" value="3bhk" >3 BHK</option>   
+                                                    <option name="4bhk" value="4bhk" >4 BHK</option> 
+                                                    <option name="4+bhk" value="5bhk" >4+ BHK</option> 
+                                                </select>
+                                            </div>
+                                        </div><br>
+                                         <div style="text-align:center"> 
+                                               <h6><b>Add Details of selected Property</b> </h6>
+                                         </div>
+                                         <div>
+                                            <label >Number of Flats</label>                                       
+                                            <input type="text" placeholder="No.of flats" name="numOfFlats"ngModel>
+                                        </div>  
+                                        <div>
+                                            <label >Available For</label>
+                                            <div class="form-group" >
+                                                <select name="AvailFor" ngModel class="form-control"style="text-align:center">
+                                                    <option value="rent">Rent</option>
+                                                    <option value="buy">Buy</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label >Average Area</label>                                       
+                                            <input type="text" placeholder=" Area in sq-ft" name="averageArea" ngModel>
+                                        </div>
+                                        <div>
+                                            <label >Starting Price (Rs)</label>  
+                                            <input type="text" name="startingPrice"ngModel>
+                                        </div>  
+                                        <div>
+                                            <label>Project Total Towers</label>                                       
+                                            <input type="text" name="totalTower"ngModel>
+                                        </div>
+                                        <div>
+                                            <label>Project Total Units</label>                                       
+                                            <input type="text" name="totalUnits"ngModel>
+                                        </div>
+                                        <div>
+                                            <label>Project Available Units</label>                                       
+                                            <input type="text" name="avilableUnits"ngModel>
+                                        </div>
+                                        <div>
+                                            <label>Project Launch Date</label>                                       
+                                            <input type="text"name="launchDate"ngModel>
+                                        </div>
+                                    </div>
+                             </div>
+                       </div>
+                       <input type="button" class="btn btn-indigo" value="Next"  (click)="onThree(myForm3)" >
+                       <input type="button" class="btn btn-indigo" value="Prev"  (click)="onThree(myForm3)" >
+                       <!-- <button  color="primary" style="background-color: #2196F3;" (click)="onThree(myForm3)" > NEXT </button>                    -->
+                    </form>   
+            </div>
+        </div>
+    
+        <div class="col-md-6" *ngIf="four">
+            <div class="col-md-12"style="text-align:center;">
+                <form #myForm4="ngForm">
+                    <div class="card">
+                            <div class="card-body"  >
+                                   <h5 class="card-title "> 
+                                   <b> Property Informtion 2</b> <br> 
+                                   </h5>
+                                   <p > Please enter your Property detail </p>
+                                   <div class="example-container ">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <input type="text" placeholder="Covered Area" name="coveredArea"ngModel>
+                                        </div>
+                                       <div class="col-md-4">      
+                                        <div class="form-group">
+                                            <select name="coverAreaUnit" ngModel class="form-control" >
+                                                <option value="Sqft">Sqft</option>
+                                                <option value="SqYard">SqYard</option>
+                                                <option value="Sqm">Sqm</option>
+                                            </select>
+                                        </div>
+                                      </div>
+                                   </div>
+                                   <div class="row">
+                                       <div class="col-md-8">
+                                            <input type="text" placeholder="Plot Area"name="plotArea"ngModel>
+                                       </div>
+                                       <div class="col-md-4">      
+                                        <div class="form-group">
+                                            <select name="plotAreaUnit" class="form-control" >
+                                                <option value="Sqft">Sqft</option>
+                                                <option value="SqYard">SqYard</option>
+                                                <option value="Sqm">Sqm</option>
+                                            </select>
+                                        </div>
+                                      </div>
+                                   </div>
+                               </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <input type="text" placeholder="Covered Area"name="carpetArea"ngModel>
+                                    </div>
+                                    <div class="col-md-4">      
+                                    <div class="form-group">
+                                        <select name="crptAreaUnit" class="form-control" >
+                                            <option value="Sqft">Sqft</option>
+                                            <option value="SqYard">SqYard</option>
+                                            <option value="Sqm">Sqm</option>
+                                        </select>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <input type="text" placeholder="Plot Length"name="plotLength"ngModel>
+                                    </div>
+                                    <div class="col-md-4" style="">
+                                        <div class="form-group">
+                                            <select name="plotLengthUnit" class="form-control" >
+                                                <option value="Sqft">Sqft</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Price per sqft"name="price"ngModel>
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Plot Breadth"name="plotBreadth"ngModel>
+                                </div>
+                                <div>
+                                    <label> Age of Property</label>
+                                    <div class="form-group">
+                                        <select name="propertyAge" ngModel class="form-control" >
+                                            <option value="0-1 year">0-1 year</option>
+                                            <option value="1-2 years">1-2 years</option>
+                                            <option value="2-3 years">2-3 years</option>
+                                            <option value="Grater than 3 years">Grater than 3 years</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Project Available Date" name="projAvailDate" ngModel>
+                                </div>
+                                <div>
+                                    <label> <b>  Transaction Type </b> </label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input type="radio" name="TransactionType" ngModel value="New Property"> New Property &nbsp;
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="radio" name="TransactionType" ngModel value="Resale"> Resale<br><br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label> <b> Possession Status </b> </label> 
+                                        <div class="row">
+                                             <div class="col-md-6">
+                                                <input type="radio" name="PossessionStatus" ngModel value="Ready to move"> Ready to move &nbsp;
+                                            </div> 
+                                            <div class="col-md-6">
+                                                 <input type="radio" name="PossessionStatus" ngModel value=" Under Construction"> Under Construction<br>
+                                             </div>                                              
+                                         </div>
+                                </div>
+                                     </div>
+                                 </div>
+                                 <input type="button" class="btn btn-indigo" value="Next"  (click)="onFour(myForm4)">
+                                 <input type="button" class="btn btn-indigo" value="Prev"  (click)="onFour(myForm4)">
+                              <!-- <button  color="primary"  style="background-color: #2196F3;" (click)="onFour(myForm4)" > NEXT </button>                                    -->
+                            </form>
+                            </div>
+                    </div>
+    
+       
+                    <div class="col-md-6" *ngIf="five"style="text-align:center;">
+            <div class="col-md-12">
+                <div class="card">
+                    <div><br><br>
+                        <span class="round-tabs check">
+                                <i class="fa fa-check fa-2x"></i>
+                       </span>
+                       <div style="margin-bottom:5%;">
+                        <h3 class="head text-center">Your Property is Submitted Successfully&nbsp;
+                            <br>Thank You !!! <br><span style="color:#f48260;">♥</span>
+                        </h3>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- </form>     -->
+    </div>
+</div> 
+    

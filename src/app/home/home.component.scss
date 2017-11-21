@@ -109,8 +109,12 @@ img{
     margin-top: 11%;
     background: transparent;
 }
+.carousel-indicators{
+    bottom: -50px;    
+}
 .carousel-indicators .active {
     background-color: #d25a69;
+
 }
 .menuhover:hover{
     background-color:rgb(57, 73, 171);
@@ -133,44 +137,3 @@ li div a{
     padding: 20px;  
     color: white;  
 }
-
-// <div>
-// <ul>
-//   <li>
-//     <div class="card" style="width:16.5rem;height:16.5rem;">
-//       <img class="card-img-top center" src="../../assets/vs2.png" alt="Card image cap">
-//       <div class="card-body">
-//         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-//         <a href="#" class="btn btn-primary">Go somewhere</a>
-//       </div>
-//     </div>
-//   </li>
-//   <li>
-//     <div class="card" style="width:16.5rem;height:16.5rem;">
-//       <img class="card-img-top center" src="../../assets/vs2.png" alt="Card image cap">
-//       <div class="card-body">
-//         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-//         <a href="#" class="btn btn-primary">Go somewhere</a>
-//       </div>
-//     </div>
-//   </li>
-//   <li>
-//     <div class="card" style="width:16.5rem;height:16.5rem;">
-//       <img class="card-img-top center" src="../../assets/vs2.png" alt="Card image cap">
-//       <div class="card-body">
-//         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-//         <a href="#" class="btn btn-primary">Go somewhere</a>
-//       </div>
-//     </div>
-//   </li>
-//   <li>
-//     <div class="card" style="width:16.5rem;height:16.5rem;">
-//       <img class="card-img-top center" src="../../assets/vs2.png" alt="Card image cap">
-//       <div class="card-body">
-//         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-//         <a href="#" class="btn btn-primary">Go somewhere</a>
-//       </div>
-//     </div>
-//   </li>
-// </ul>
-// </div>

@@ -12,6 +12,8 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { PropertyaddComponent } from './propertyadd/propertyadd.component';
 import { NavbarrComponent } from './navbarr/navbarr.component';
 import { AddpropertyComponent } from './addproperty/addproperty.component';
+import { HomeComponent } from './home/home.component';
+import { DetailPropertyComponent } from './detail-property/detail-property.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { AddpropertyComponent } from './addproperty/addproperty.component';
     PropertyaddComponent,
     NavbarrComponent,
     AddpropertyComponent,
+    HomeComponent,
+    DetailPropertyComponent,
     
   ],
   imports: [
@@ -30,7 +34,7 @@ import { AddpropertyComponent } from './addproperty/addproperty.component';
     FormsModule,
     MyRoutingModule,
     BrowserAnimationsModule,
-    
+  
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
