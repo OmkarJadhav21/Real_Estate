@@ -1,0 +1,31 @@
+.input-group-addon{
+    border: none;
+    background-color: white;
+    color: grey;    
+}
+.fa-search{
+    margin-bottom: 32%;
+}
+
+.btn {    
+    background-color: #ffffff;
+}
+.btn-indigo {    
+    color: rgb(0, 0, 0) !important;
+}
+.btn-indigo:hover, .btn-indigo:focus, .btn-indigo:active, .btn-indigo.active {
+    background-color: #fafafa !important;
+        color: rgb(0, 0, 0) !important;
+
+}
+input[type=text]{
+    border: none;
+    outline: none;
+    height: 2.1rem;
+    width: 100%;
+    font-size: 0.9rem;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+    margin-top: -1%;
+}

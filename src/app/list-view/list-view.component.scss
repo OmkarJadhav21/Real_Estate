@@ -1,0 +1,81 @@
+.input-group-addon{
+    border: none;
+    background-color: white;
+    color: grey;    
+}
+.fa-search{
+    margin-bottom: 32%;
+}
+
+.btn {    
+    background-color: #ffffff;
+}
+.btn-indigo {    
+    color: rgb(0, 0, 0) !important;
+}
+.btn-indigo:hover, .btn-indigo:focus, .btn-indigo:active, .btn-indigo.active {
+    background-color: #fafafa !important;
+        color: rgb(0, 0, 0) !important;
+
+}
+input[type=text]{
+    border: none;
+    outline: none;
+    height: 2.1rem;
+    width: 100%;
+    font-size: 0.9rem;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+    margin-top: -1%;
+}
+.imgst{
+width: 20%;
+float: left;
+height: 100%;   
+background-color: yellow;
+
+overflow: hidden;
+}
+
+.txtt{
+// background-cblack;
+float: right;
+width: 80%;
+}
+img{
+    width: 100%;
+    overflow: hidden;
+}
+.btfootr{
+    bottom: 0;
+    width: 99%;
+    overflow: hidden;
+    object-fit: contain;
+    border-top: 1px solid rgb(187, 185, 185);
+}
+.pri{
+    height: 70%;
+    margin-bottom: 2%;
+    display: block;
+    object-fit: contain;
+}
+ul{
+    left: 0;
+}
+ul li{ 
+    margin-left: 0;
+    list-style-type: none;
+    display: inline; 
+   
+}
+
+
+@media only screen and ( max-width:768px){
+
+    .pri{
+        background-color: red;
+
+    }
+
+}

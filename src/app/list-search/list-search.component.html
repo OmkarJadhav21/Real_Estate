@@ -1,0 +1,31 @@
+<div class="card">
+    <div class="container">
+      <div>
+       <div class="row">
+         <div class="col-md-9">
+           <form>
+            <div class="input-group " style="background-color:white;">
+                <span class="input-group-addon" > <i class="fa fa-search" aria-hidden="true"></i></span>
+                <input type="text" class="form-control " placeholder="Search by City,Pin or Address...." name="serachText" >
+            </div>
+          </form>    
+         </div>
+         <div class="col-md-3">        
+            <div class="btn-group">
+              <input type="button" class="btn btn-indigo dropdown-toogle" data-toggle="dropdown" value="Sort By"aria-haspopup="true" aria-expanded="false">
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" >Featured Listing</a>
+                  <a class="dropdown-item" >Price High to Low </a>
+                  <a class="dropdown-item" >Price Low to High</a>
+                  <a class="dropdown-item" >Newest to Oldest</a>
+                  <a class="dropdown-item" >Oldest to Newest</a>
+                </div>
+            </div>
+            <a [routerLink]="['/grid-view']" style="margin-top:3%"><i class="fa fa-th-large" aria-hidden="true"></i></a>
+            <a [routerLink]="['/list-view']" ><i class="fa fa-th-list" aria-hidden="true"></i></a>
+         </div>
+       </div>
+          
+      </div>
+    </div>
+    </div>

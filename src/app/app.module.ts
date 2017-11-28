@@ -14,6 +14,9 @@ import { NavbarrComponent } from './navbarr/navbarr.component';
 import { AddpropertyComponent } from './addproperty/addproperty.component';
 import { HomeComponent } from './home/home.component';
 import { DetailPropertyComponent } from './detail-property/detail-property.component';
+import { ListViewComponent } from './list-view/list-view.component';
+import { GridViewComponent } from './grid-view/grid-view.component';
+import { ListSearchComponent } from './list-search/list-search.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,9 @@ import { DetailPropertyComponent } from './detail-property/detail-property.compo
     AddpropertyComponent,
     HomeComponent,
     DetailPropertyComponent,
+    ListViewComponent,
+    GridViewComponent,
+    ListSearchComponent,
     
   ],
   imports: [
