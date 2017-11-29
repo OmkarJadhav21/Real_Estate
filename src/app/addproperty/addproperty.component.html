@@ -4,44 +4,40 @@
    <p>Safe and easy to submit your property today towards Government</p>
    
 <div class="container" >
-        <div class="row" style="padding-bottom: 41px;text-align: -webkit-center;">
-        <div class="col-md-4">           
+   
+    <!-- <div class="tk">   
+        <div class="card crd" [ngClass]="{'crdActive':one}">
+            <p class="pdding"> 1 </p>     
         </div>
-           <div class="col-md-4">
-               <div class="row">
-                    <div class="col-md-2">
-                        <div class="card crd" [ngClass]="{'crdActive':one}">
-                           <p class="pdding"> 1 </p>     
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="card crd" [ngClass]="{'crdActive':two}">
-                            <p class="pdding">2</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="card crd" [ngClass]="{'crdActive':three}">
-                            <p class="pdding">3</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="card crd" [ngClass]="{'crdActive':four}">
-                            <p class="pdding">4</p>
-                        </div> 
-                    </div>
-                    <div class="col-md-2">
-                        <div class="card crd" [ngClass]="{'crdActive':five}">
-                            <p class="pdding">5</p>  
-                        </div> 
-                    </div>
-               </div>
-           </div>
-           <div class="col-md-4">
-           </div>
+
+        <div class="card crd" [ngClass]="{'crdActive':two}">
+            <p class="pdding">2</p>
         </div>
-    </div>
+
+        <div class="card crd" [ngClass]="{'crdActive':three}">
+            <p class="pdding">3</p>
+        </div>
+
+        <div class="card crd" [ngClass]="{'crdActive':four}">
+            <p class="pdding">4</p>
+        </div>
+    
+        <div class="card crd" [ngClass]="{'crdActive':five}">
+            <p class="pdding">5</p>  
+        </div>
+    </div> -->
+</div>
 
     <div class="row">
+            <div>
+                    <ul>
+                        <li class="crd" [ngClass]="{'crdActive':one}">1</li>
+                        <li class="crd" [ngClass]="{'crdActive':two}">2</li>
+                        <li class="crd" [ngClass]="{'crdActive':three}">3</li>
+                        <li class="crd" [ngClass]="{'crdActive':four}">4</li>
+                        <li class="crd" [ngClass]="{'crdActive':five}">5</li>
+                    </ul>
+                </div>
     <!-- <form> -->
         <div class="col-md-3"></div>
         <div class="col-md-6" *ngIf="one">

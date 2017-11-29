@@ -23,6 +23,10 @@ li a {
 li a:hover {
     background-color:rgba(56, 82, 185, 0.918);
 }
+.form-control{
+  z-index: 1;
+  overflow: hidden;
+}
 .dropbtn {
     background-color:rgb(57, 73, 171);
     color: white;

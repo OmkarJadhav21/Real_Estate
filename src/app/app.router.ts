@@ -8,6 +8,7 @@ import { DetailPropertyComponent } from './detail-property/detail-property.compo
 import { ListViewComponent } from './list-view/list-view.component';
 import { GridViewComponent } from './grid-view/grid-view.component';
 import { ListSearchComponent } from './list-search/list-search.component';
+import { AgentDetailComponent } from './agent-detail/agent-detail.component';
 
 const routes:Routes=[
     { path:'',component:HomeComponent},
@@ -18,6 +19,8 @@ const routes:Routes=[
     { path:'list-view',component:ListViewComponent },
     { path:'grid-view',component:GridViewComponent },
     { path:'app-list-search',component:ListSearchComponent },
+    { path:'agentDetail',component:AgentDetailComponent },
+    
     
     
 ];

@@ -17,6 +17,9 @@ import { DetailPropertyComponent } from './detail-property/detail-property.compo
 import { ListViewComponent } from './list-view/list-view.component';
 import { GridViewComponent } from './grid-view/grid-view.component';
 import { ListSearchComponent } from './list-search/list-search.component';
+import { AgentDetailComponent } from './agent-detail/agent-detail.component';
+import { EffectService } from './allServices/effect.service';
+import { BlurdirDirective } from './allDirectives/blurdir.directive';
 
 @NgModule({
   declarations: [
@@ -31,6 +34,8 @@ import { ListSearchComponent } from './list-search/list-search.component';
     ListViewComponent,
     GridViewComponent,
     ListSearchComponent,
+    AgentDetailComponent,
+    BlurdirDirective,
     
   ],
   imports: [
@@ -43,7 +48,7 @@ import { ListSearchComponent } from './list-search/list-search.component';
   
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
-  providers: [],
+  providers: [EffectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

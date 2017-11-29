@@ -6,3 +6,61 @@
     color: white;
     font-size: 14px
 }
+
+.fa-bars{
+    color: white;
+}
+a{
+    color: white;
+}
+.header{
+   text-align: center;
+   color: white;
+   background-color: orange;
+   height: 70px;
+   width: 100%;
+}
+.btnn{
+  z-index: 999;
+}
+.navbarr{
+    background-color:rgb(57, 73, 171);
+    color: white;
+    margin-bottom: 0;
+}
+.navbarr button{
+background: transparent;
+border: none;
+color: white;
+margin-top: 4px;
+font-family: sans-serif;
+font-weight: lighter; 
+height: 35px;
+}
+
+.navbarr ul li{
+    display: inline;
+    list-style-type: none;
+}
+ul{
+    margin-bottom: 0rem;
+}
+.pull-right li:last-child{
+    margin-right: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+@media  only screen and (max-width:767px){
+.hidebtn{
+    display: none;
+}
+
+}
